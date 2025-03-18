@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Cumpleaños</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #dcd0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .fondo {
+            text-align: center;
+        }
+
+        .sobre img {
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .sobre img:hover {
+            transform: scale(1.1);
+        }
+
+        .carta {
+            display: none;
+            background-color: #fff;
+            border: 2px solid #ff69b4;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .carta img {
+            width: 100px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fondo">
+        <div class="sobre" onclick="mostrarCarta()">
+            <img src="sobre.jpg" alt="Haz clic aquí para abrir la carta">
+        </div>
+
+        <div class="carta" id="carta">
+            <h1>Happy birthday, mi rayito de luna</h1>
+            <p>
+                Hoy es el día en que tu mami te trajo a este mundo, dándole vida a mi mundo. 
+                Mi reina hermosa, te deseo un excelente día lleno de muchas bendiciones. 
+                Agradezco que estés a mi lado porque todo es más hermoso contigo. 
+                Amo estar contigo, tu calidez y amor son únicos y especiales. Te amo mucho, 
+                mi morenita preciosa. Todo va a estar súper bien siempre, y estoy muy orgullosa de la mujer que eres. 
+                Tu esencia es tan valiosa y única. Siempre quiero que seas tú misma, mi amor.
+                Pronto estaremos juntas y nada ni nadie podrá separarnos. Muuuak.
+            </p>
+            <p>
+                Te tengo tu regalito guardado y cuando te vea te lo daré. 
+                Disfruta tu día, mi reina hermosa. Aquí siempre estaré para ti.
+            </p>
+            <img src="stiker.png" alt="">
+            <p>Te amo mucho, mi corazón. Con amor, Karolayn. Besos grandes.</p>
+        </div>
+    </div>
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").style.display = "block";
+        }
+    </script>
+</body>
+</html>
